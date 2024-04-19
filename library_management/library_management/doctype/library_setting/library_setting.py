@@ -5,7 +5,5 @@
 from frappe.model.document import Document
 
 
-class LibraryMember(Document):
-
-    def run_before_save_methods(self):
-        self.full_name = f'{self.first_name} {self.last_name or ""}'
+class LibrarySetting(Document):
+	pass
