@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:article_name",
  "creation": "2024-04-17 09:33:00.728539",
@@ -13,8 +14,12 @@
   "isbn",
   "status",
   "publisher",
+  "get_issued_count",
   "section_break_dnjz",
-  "description"
+  "description",
+  "tab_2_tab",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -61,12 +66,35 @@
   {
    "fieldname": "section_break_dnjz",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "get_issued_count",
+   "fieldtype": "Button",
+   "label": "Get Issued Count"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2024-04-17 10:15:57.235515",
+ "modified": "2024-04-19 12:15:43.240144",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -107,6 +135,7 @@
    "share": 1
   }
  ],
+ "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
