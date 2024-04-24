@@ -28,23 +28,30 @@ The system comprises several DocTypes, each serving a specific funcition:
 
   ### Setting up the Library Management System
 
-  1. Clone the repository:
+  1. Create a new site:
      ```
-     https://github.com/emmanuel-mwendwa/Library_Management.git
-     cd Library_Management
+     bench new-site library.com
      ```
      
   2. Install the app onto your Frappe site:
      ```
+
      bench get-app library_management https://github.com/emmanuel-mwendwa/Library_Management.git
+
      bench --site library_management install-app library_management_system
+
      ```
 
   4. Migrate your site to apply any doctype changes and start using the application:
      ```
-     bench --site library_management migrate
+     bench --site library.com migrate
      ```
 
+  5. Set up the loan period and maximum book issues in the Library Setting DocType
+    ```
+    Loan Period
+    Maximum Number of Issued Articles
+    ```
 
 ## Usage
 
